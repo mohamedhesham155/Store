@@ -29,10 +29,10 @@
 }
 .nav{
     grid-area: 1/4/2/6;
-    /* background-color: rgb(37, 37, 37); */
     list-style: none;
-    padding-top: 16px;
-    padding-left: 10px;
+    margin-top: 16px;
+    margin-left: 10px;
+    justify-self: end;
     
     
 }
@@ -40,8 +40,7 @@
     list-style: none;
     line-height: 30px;
     display: inline;
-    padding: 20px 20px 20px 0px;
-    /* background-color: rgb(37, 37, 37); */
+    padding: 20px;
 
 
 }
@@ -53,32 +52,90 @@
     padding: 5px;
     
 }
+@media (max-width:320px) {
+        .nav{
+            justify-self: end;
+            text-align: end;
+            margin-bottom: 20px;
+      
+        }
+        li{
+            margin-bottom:0px;
+        }
+        .nav li{
+        padding:5px 4px 5px 0px;
+        font-size: 10px;       
+        }
 
-@media (max-width:375px) {
+        .search input{
+            width: 150px;
+            margin-left: 15px;
+        }
+
+}
+@media (min-width:321px)and (max-width:375px) {
+    .nav{
+        justify-self: end;
+        text-align: end;
+        margin-bottom: 20px;
+    }
     .nav li{
     padding:5px 4px 5px 0px;
-    font-size: 7px;
+    font-size: 12px;
     }
-    .nav{
-        padding-left: 17px;
+
+    .search input{
+        width: 190px;
+        margin-left: 10px;
     }
 }
 
 @media (min-width:376px) and (max-width:425px) {
+    .nav{
+        justify-self: end;
+        text-align: end;
+        margin-bottom: 20px;
+    }
     .nav li{
-    padding:5px 5px 5px 0px;
-    font-size: 10px;
-
+    padding:5px 4px 5px 0px;
+    font-size: 15px;
     }
 
+    .search input{
+        width: 200px;
+    }
 }
-@media (min-width:426px) and (max-width:791px) {
-    .nav li{
-    padding:5px 5px 5px 0px;
-    font-size: 14px;
 
+@media (min-width:425px) and (max-width:791px) {
+    .nav{
+        justify-self: end;
+        text-align: end;
+        margin-bottom: 20px;
+    }
+    .nav li{
+    padding:5px 4px 5px 0px;
+    font-size: 16px;
     }
 
+    .search input{
+        width: 225px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .nav{
+        justify-self: end;
+        text-align: end;
+        margin-bottom: 20px;
+    }
+    .nav li{
+    padding:5px 4px 5px 0px;
+    font-size: 16px;
+    }
+
+    .search input{
+        width: 600px;
+        height: 25px;
+    }
 }
 .welcome{
     grid-area: 2/1/3/6;
@@ -185,6 +242,11 @@
 }
 .footer{
     grid-area: 4/1/5/6;
-    background-color: rgb(37, 37, 37);
+    /* background-color: rgb(37, 37, 37); */
     margin-top: 2px;
+    background-image: url(image/Artboard\ 2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
