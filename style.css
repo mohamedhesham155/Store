@@ -1,6 +1,10 @@
 /* *{
     background-color: rgb(233, 233, 233);
 } */
+html{
+    width: 100vh;
+    margin: auto;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
